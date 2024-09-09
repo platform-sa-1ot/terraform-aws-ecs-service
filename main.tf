@@ -96,7 +96,7 @@ resource "aws_ecs_service" "service" {
     iterator = d
 
     content {
-      enable   = d.value.enabled
+      enable   = d.value.enable
       rollback = d.value.rollback
     }
   }

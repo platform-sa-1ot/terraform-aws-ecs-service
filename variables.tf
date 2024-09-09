@@ -82,7 +82,7 @@ variable "force_new_deployment" {
 
 variable "deployment_circuit_breaker" {
   type = object({
-    enabled  = bool
+    enable   = bool
     rollback = bool
   })
   description = "Whether ECS deployment circuit breaker should be enabled (enabled attribute), and whether ECS should automatically rollback the service when tasks consistently fail (rollback attribute): https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DeploymentCircuitBreaker.html"
